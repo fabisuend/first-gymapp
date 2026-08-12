@@ -1,0 +1,27 @@
+.bigbox{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #02DEFE;
+}
+
+.align-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 87%;
+}
+
+.addoffer{
+    height: 100%;
+    width: 50%;
+    background-color: aquamarine ;
+}
+
+.awardbox{
+    height: 100%;
+    width: 50%;
+    background-color: pink;
+}

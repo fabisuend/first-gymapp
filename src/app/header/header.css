@@ -1,0 +1,40 @@
+h1 {
+    font-weight: 900;
+}
+
+.main-header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    background-color: #020101;
+}
+.main-header img{
+    max-height: 100%; /* Immer genauso hoch, wie der Elterncontainer */
+    max-width: auto; /* Auto hier sorgt dafür, dass das Bild nicht verzerrt wird */
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: #E9E9E9;
+}
+
+.align-box{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+    border-bottom: 2px solid rgb(204, 194, 194);
+}
+
+.border-box{
+    height: 2rem;
+    width: 100%;
+    padding-bottom: 5px;
+}

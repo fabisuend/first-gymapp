@@ -1,0 +1,42 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem; /* Buttonabstand */
+    height: 6rem;
+    width: 100%;
+    background-color: #E9E9E9;
+    padding-bottom: 1rem;
+}
+
+.navbar img{
+    max-height: 100%;
+    max-width: auto;
+}
+
+.navbar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    border: 1px solid lightgrey; /* Border für den Button zum Hovern*/  
+    border-radius: 999px; /* Wert bewusst auf dem Maximum für komplett abgerundete Enden -> Größe des Buttoninhalts nun egal */
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: black; /* Gilt nur für die Buttons, da wir die eingegrenzt haben */
+    color: white; /* Text-Farbe NICHT HINTERGRUND!!! */
+    text-decoration: none; /* Nimmt den klassischen Still von Hyperlinks raus (kein Unterstrich) */
+}
+
+.navbar a:hover {
+    background-color: #558B2F;
+    opacity: 0.7; /* macht alle Elemente durchichtiger (auch die Schrift) */
+}
+
+.navbar a:link,
+.navbar a:visited { /* Sorgt dafür, dass die Links nach einem "visit" weiterhin weiß bleiben */
+    color: white;
+}
