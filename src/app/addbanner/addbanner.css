@@ -21,6 +21,8 @@
 }
 
 .awardbox{
+    display: flex;
+    justify-content: flex-end;
     height: 100%;
     width: 50%;
     background-color: pink;
