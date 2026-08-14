@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { List } from '../list/list';
 
 @Component({
   selector: 'app-mheader',
-  imports: [],
+  imports: [List],
   templateUrl: './mheader.html',
   styleUrl: './mheader.css',
 })
