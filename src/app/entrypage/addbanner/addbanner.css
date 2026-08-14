@@ -1,4 +1,4 @@
-.bigbox{
+.bigbox {
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -6,7 +6,7 @@
     background-color: #02DEFE;
 }
 
-.align-box{
+.align-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,17 +14,124 @@
     width: 87%;
 }
 
-.addoffer{
+.addoffer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
-    width: 50%;
-    background-color: aquamarine ;
+    flex: 0.7; /* Inhalt wird an den linken Rand der Box vershoben und verteilt die relative Breite der Box */
+    padding: 40px 0;
+    color: #fff;
 }
 
-.awardbox{
+.awardbox {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
     height: 100%;
-    width: 50%;
-    background-color: pink;
+    flex: 1.3; /* Inhalt wird an den rechten Rand der Box vershoben, MUSS immer zum anderen Wert angepasst werden */
+    position: relative; /* Referenz für das Award-Badge an der es sich ausrichtet  */
+}
+
+/* --- Angebots-Badge (oben links) --- */
+.offer-badge {
+    display: flex;
+    flex-direction: column;
+    background-color: #003a5d;
+    color: #fff;
+    padding: 16px 20px;
+    border-radius: 8px;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+.badge-text {
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.badge-sub {
+    font-size: 0.75rem;
+    margin-top: 6px;
+}
+
+.badge-price {
+    font-size: 0.7rem;
+    background-color: #002a44;
+    margin-top: 8px;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+/* --- Headline-Bereich --- */
+.deadline {
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.deal-headline {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.cta-button {
+    width: fit-content;
+    background-color: #fff;
+    color: #003a5d;
+    font-weight: 700;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}
+
+
+.award-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #003a5d;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    width: 160px;
+    font-size: 0.6rem;
+    z-index: 2;   /* stellt sicher, dass es über dem Bild liegt */
+}
+
+.award-title {
+    font-weight: 900;
+    font-size: 1rem;
+    margin: 6px 0;
+}
+
+.award-rank {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #b8860b;
+    margin-top: 6px;
+}
+
+/* --- Platzhalter für Model-Foto --- */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/hero.jpg"); /* Hier in css und da als Background-Image-Nutz */
+    background-size: cover; /* Komplette abdeckung */
+    background-position: top center; 
+    border-radius: 8px;
 }
