@@ -20,7 +20,7 @@
 .headlinecontainer {
     margin-bottom: 24px;
 }
-
+/* list-style: none und padding 0 entfernen die Standard-Auflistungspunkte. von <ul></ul> */
 .memberlist {
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
     padding: 0;
     margin: 0;
 }
-
+/* gilt für alle Karten, daher kann man hier alle anpassen */
 .member-card {
     background-color: #fff;
     border-radius: 8px;
@@ -49,4 +49,34 @@
     font-size: 0.9rem;
     margin: 2px 0;
     color: #555;
+}
+/* Buttons für jeder Member-Karte */
+.member-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-details:hover {
+    background-color: #1e6bff;
+}
+
+.btn-edit:hover {
+    background-color: #2eb84f;
+}
+
+.btn-delete:hover {
+    background-color: #e0322f;
 }

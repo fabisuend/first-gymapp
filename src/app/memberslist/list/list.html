@@ -3,14 +3,21 @@
     <div class="headlinecontainer">
       <h1>Mitgliederliste</h1>
     </div>
-    <ul class="memberlist">
+    <ul class="memberlist"> <!-- <ul> + <li> korrekte HTML-Struktur für Listen von gleichen Elementen -->
+      <!-- @-for braucht ein Wrapper Element pro durchlauf der Liste -->
       @for (user of users; track user.id) {
         <li class="member-card">
           <h2 class="member-name">{{ user.name }}</h2>
           <p class="member-detail">{{ user.email }}</p>
-          <p class="member-detail">&#64;{{ user.username }}</p>
+          <p class="member-detail">&#64;{{ user.username }}</p> <!-- &#64 ist die "HTML-Entity" für das @-Zeichen -->
+            <div class="member-actions">
+            <button class="btn btn-details">Details</button>
+            <button class="btn btn-edit">Ändern</button>
+            <button class="btn btn-delete">Löschen</button>
+          </div>
         </li>
       }
     </ul>
   </div>
 </div>
+
