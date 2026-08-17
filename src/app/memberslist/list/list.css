@@ -1,0 +1,18 @@
+.listcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.listcontaineralignbox{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 87%;
+    background-color: pink;
+}
