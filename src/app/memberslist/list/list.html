@@ -1,11 +1,15 @@
 <div class="listcontainer">
   <div class="listcontaineralignbox">
-    <div class="headlinecontainer"> 
-      <h1> Mitgliederliste</h1>
+    <div class="headlinecontainer">
+      <h1>Mitgliederliste</h1>
     </div>
-    <ul>
+    <ul class="memberlist">
       @for (user of users; track user.id) {
-        <li>{{ user.name }} – {{ user.email }} – {{ user.username }}</li>
+        <li class="member-card">
+          <h2 class="member-name">{{ user.name }}</h2>
+          <p class="member-detail">{{ user.email }}</p>
+          <p class="member-detail">&#64;{{ user.username }}</p>
+        </li>
       }
     </ul>
   </div>

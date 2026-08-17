@@ -1,18 +1,52 @@
-.listcontainer{
+.listcontainer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: auto;
     width: 100%;
-    background-color: aquamarine;
+    background-color: #E9E9E9;
+    padding: 40px 0;
 }
 
-.listcontaineralignbox{
+.listcontaineralignbox {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     height: 100%;
     width: 87%;
-    background-color: pink;
+}
+
+.headlinecontainer {
+    margin-bottom: 24px;
+}
+
+.memberlist {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.member-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    color: #003a5d;
+}
+
+.member-detail {
+    font-size: 0.9rem;
+    margin: 2px 0;
+    color: #555;
 }
