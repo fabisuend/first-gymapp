@@ -1,1 +1,5 @@
-<p>list works!</p>
+<ul>
+  @for (user of users; track user.id) {
+    <li>{{ user.name }} – {{ user.email }} – {{ user.username }}</li>
+  }
+</ul>

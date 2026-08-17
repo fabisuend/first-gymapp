@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { List } from '../list/list';
+import { List } from '../list/list'; /* Anbindung von weiteren Elementen notwendig */
 
 @Component({
   selector: 'app-mheader',
