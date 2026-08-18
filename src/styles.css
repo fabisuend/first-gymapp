@@ -3,8 +3,11 @@
   box-sizing: border-box; /* Verhindert, dass addierte Elemente der Box diese überschreiten */
 }
 
+/* ############## Normilazing HTML ############### */
 body {
   font-family: 'Roboto', sans-serif; /* Robot global gesetzt-> kann auch vor @font-face kommen. Reihenfolge egal */
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
